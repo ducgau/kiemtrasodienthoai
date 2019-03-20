@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>CHÀO MỪNG BẠN ĐẾN VỚI DỊCH VỤ CỦA VIETTEL</h1>
+<button onclick="phoneNumber(prompt('nhập số cần tra'))">mời nhập số</button>
+<script>
+function phoneNumber(str) {
+    regex = /^086|096|097|098|032|033|034|035|036|037|038|039[0-9]{7}$/;
+    if (regex.test(str)){
+        alert("là số của viettel");
+    }
+    else  alert("không là số viettel");
+
+}
+</script>
+</body>
+</html>
